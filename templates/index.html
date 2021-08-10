@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Session & Bootstrap Buttons</h1>
+    <br>
+    <div class=counter_box>
+        <p>Info Button Has Been Clicked {{session['counter_1']}} Times <a class="btn btn-info" href="/counter/1">Click Me</a></p>
+    </div>
+    <br>
+    <div class=counter_box>
+        <p>Primary Button Has Been Clicked {{session['counter_2']}} Times  <a class="btn btn-primary" href="/counter/2">Click Me</a></p>
+    </div>
+    <br>
+    <div class=counter_box>
+        <p>Success Button Has Been Clicked {{session['counter_3']}} Times  <a class="btn btn-success" href="/counter/3">Click Me</a></p>
+    </div>
+    <br>
+    <div class=counter_box>
+        <p>Click Danger Button To Reset!!! <a class="btn btn-danger" href="/reset_counters">Reset</a></p>
+    </div>
+</body>
+</html>
